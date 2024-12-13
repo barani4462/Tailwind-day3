@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="columns-3 bg-blue-500">
+        <h1>1</h1>
+        <h1 class="hover:break-after-column">2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+        <h1>5</h1>
+        <h1>6</h1>
+        <h1>7</h1>
+        <h1>8</h1>
+    </div>
+
+    <div class="container columns-3">
+       <div class="break-after-column box-border h-60 w-48 p-4 border-4">
+        <p>The box-border - Height and width is inclusive for border,content,padding</p>
+       </div>
+       <div class="break-after-column box-content h-60 w-48 p-4 border-4">
+        <p>The box-content - Height and wigth is only for content. Border and padding will be additional</p>
+       </div>
+       <div>
+        <div class="break-after-column box-border h-60 w-48 p-4 border-4 hover:box-content">
+            <p>Box border normally and will change to box content on hover</p>
+           </div>
+    </div>
+    </div>
+
+    <div class="relative h-28 w-auto bg-green-300">
+        <div class="absolute bg-gray-400 top-5 left-10">
+            This is abolute container 
+        </div>
+        </div>
+
+      <!--  <div class="relative">
+            <img src="../asserts/msd.png" alt="" class="z-10 absolute left-40">
+            <img src="../asserts/msd.png" alt="" class="z-20 absolute left-96">
+            <img src="../asserts/msd.png" alt="" class="z-30 absolute left-[600px]">
+        </div>-->
+
+        <div class="box-content h-20 w-44 p-4 border-red-500 border border-slate-500">
+            <div class="flex flex-row justify-around items-center">
+                <img src="./asserts/msd.png" alt="" width="50px" height="50px">
+                <strong>MSDONI</strong>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-y-2">
+            <div class="box-content h-20 w-44 p-4 border-4">
+                <div class="flex flex-row justify-around items-center">
+                    <img src="./asserts/msd.png" alt="" width="50px" height="50px">
+                    <strong>MSDONI</strong>
+                </div>
+            </div>
+            
+            <div class="box-content h-20 w-44 p-4 border-4">
+                <div class="flex flex-row justify-around items-center">
+                    <img src="./asserts/msd.png" alt="" width="50px" height="50px">
+                    <strong>MSDONI</strong>
+                </div>
+            </div>
+            <div class="box-content h-20 w-44 p-4 border-4">
+                <div class="flex flex-row justify-around items-center">
+                    <img src="./asserts/msd.png" alt="" width="50px" height="50px">
+                    <strong>MSDONI</strong>
+                </div>
+            </div>
+            <div class="box-content h-20 w-44 p-4 border-4">
+                <div class="flex flex-row justify-around items-center">
+                    <img src="./asserts/msd.png" alt="" width="50px" height="50px">
+                    <strong>MSDONI</strong>
+                </div>
+            </div>
+           </div>
+           
+    </div>
+</body>
+</html>
